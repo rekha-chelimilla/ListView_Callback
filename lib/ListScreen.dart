@@ -52,8 +52,8 @@ class ListScreenState extends State<ListScreen> {
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
-            title:
-                Text("${employeeDetails.email} ${employeeDetails.technology}"),
+            title: Text(
+                "${employeeDetails.name} \n ${employeeDetails.email} \n ${employeeDetails.technology}"),
             actions: [
               TextButton(
                 onPressed: () {
