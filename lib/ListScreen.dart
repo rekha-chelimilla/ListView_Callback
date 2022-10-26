@@ -52,7 +52,8 @@ class ListScreenState extends State<ListScreen> {
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
-            title: Text("${employeeDetails.email} ${employeeDetails.technology}"),
+            title:
+                Text("${employeeDetails.email} ${employeeDetails.technology}"),
             actions: [
               TextButton(
                 onPressed: () {
@@ -62,6 +63,6 @@ class ListScreenState extends State<ListScreen> {
               )
             ],
           );
-        }); 
+        });
   }
 }

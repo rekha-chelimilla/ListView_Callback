@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'ListScreen.dart';
-
+import 'package:list_view_app/AppPages.dart';
+import 'package:list_view_app/AppRoutes.dart';
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
@@ -8,9 +8,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: ListScreen(),
-      debugShowCheckedModeBanner: false,
+    return MaterialApp(
+      initialRoute: AppRoutes.intitial,
+      routes: AppPages.routes,
     );
   }
 }
