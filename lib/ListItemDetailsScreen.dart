@@ -8,14 +8,14 @@ class EmployeeDetails {
   EmployeeDetails({this.name, this.email, this.technology});
 }
 
-class AddDetailsScreen extends StatefulWidget {
-  const AddDetailsScreen({Key? key}) : super(key: key);
+class ListItemDetails extends StatefulWidget {
+  const ListItemDetails({Key? key}) : super(key: key);
 
   @override
-  Details createState() => Details();
+  ListItem createState() => ListItem();
 }
 
-class Details extends State<AddDetailsScreen> {
+class ListItem extends State<ListItemDetails> {
   TextEditingController nameController = TextEditingController();
   TextEditingController emailController = TextEditingController();
   TextEditingController technologyController = TextEditingController();

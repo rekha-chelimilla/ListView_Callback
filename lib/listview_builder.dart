@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'AddDetailsScreen.dart';
+import 'ListItemDetailsScreen.dart';
 
 class Employee extends StatelessWidget {
   const Employee(

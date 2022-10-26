@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'AddDetailsScreen.dart';
+import 'ListItemDetailsScreen.dart';
 import 'listview_builder.dart';
 
 class ListScreen extends StatefulWidget {
@@ -35,7 +35,7 @@ class ListScreenState extends State<ListScreen> {
         onPressed: () async {
           final result = await Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => const AddDetailsScreen()),
+            MaterialPageRoute(builder: (context) => const ListItemDetails()),
           );
 
           setState(() {
